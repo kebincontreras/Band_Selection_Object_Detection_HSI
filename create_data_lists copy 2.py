@@ -31,7 +31,7 @@ def parse_annotation(annotation_path):
 
 def filter_images_and_save_json(voc_path, output_folder, desired_dims):
     voc_path = os.path.abspath(voc_path)
-    image_sets = ['trainval', 'test']
+    image_sets = ['TRAIN', 'test']
     for image_set in image_sets:
         images = []
         objects = []
